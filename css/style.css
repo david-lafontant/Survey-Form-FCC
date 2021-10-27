@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+}
+
+body {
+  background-color: #424242;
+}
+
+h1 {
+  color: #ff4411;
+  font-size: 48px;
+  font-family: "Signika", sans-serif;
+  padding-bottom: 20px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+p {
+  font-family: "Inder", sans-serif;
+  line-height: 38px;
+  margin-bottom: 15px;
+  color: grey darken-3;
+}
+
+fieldset {
+  margin-bottom: 1em;
+  color: grey darken-3;
+  font-family: "Inder", sans-serif;
+}
+textarea {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #757575;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: grey darken-3;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+#description {
+  color: grey darken-2;
+  font-family: "Signika", sans-serif;
+  padding-bottom: 20px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+.soumettre {
+  background-color: #5f0ee0;
+  width: 100px;
+  border: 1px solid #5805f3;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 0 0 1px #4f3786 inset;
+  color: #f5f5f5;
+  padding: 5px;
+}
+
+.soumettre:hover {
+  background-color: #be3523;
+  border-radius: 3px 3px 3px 3px;
+  text-decoration: none;
+}
+
+/* Customize the label (the content) */
+.content {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.content input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(23, 208, 233);
+}
+
+/* On mouse-over, add a grey background color */
+.content:hover input ~ .checkmark {
+  background-color: rgb(221, 71, 71);
+}
+
+/* When the checkbox is checked, add a blue background */
+.content input:checked ~ .checkmark {
+  background-color: #157fd6;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.content input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.content .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(27, 27, 27);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Create a custom radio button */
+.formRadio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(26, 163, 241);
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.content:hover input ~ .formRadio {
+  background-color: rgb(7, 66, 51);
+}
+
+/* When the radio button is checked, add a blue background */
+.content input:checked ~ .formRadio {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.formRadio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.content input:checked ~ .formRadio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.content .formRadio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(26, 48, 5);
+}
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #eeeeee;
+    margin-bottom: 2em;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eeeeee;
+    margin-bottom: 2em;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+.last {
+  background-color: inherit;
+  text-align: center;
+}

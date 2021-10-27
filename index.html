@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Suvey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+        <div class="row col-s-9 col-9">
+            <!--User story 1-->
+            <h1 id="title">Internet Usage Survey</h1>
+
+            <!--User story 2-->
+            <p id="description">This a survey form to evaluate internet usage survey</p>
+
+        </div>
+
+
+        <!--User story 3-->
+        <form id="survey-form">
+            <div   class="row col-s-9 col-9">
+                <!--User stories 4, 10, 11-->
+                <label id="name-label"><span>Name :</span> <input type="text" id="name" required
+                        placeholder="Enter yout name please"> </label><br>
+
+                <!--User stories 5 , 6, 10, 11 -->
+                <label id="email-label"><span>Email : </span><input type="email" id="email"
+                        pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" required
+                        placeholder="Enter you Email"> </label><br>
+
+                <!--User stories 7, 8, 9-->
+                <label id="number-label"><span>Age :</span> <input type="number" id="number" min="15" max="100"
+                        placeholder="Enter your age"> </label><br>
+
+            </div>
+
+            <div   class="row col-s-9 col-9">
+                <!--User story 12-->
+                <label>
+                    Please select your continent:
+                    <select id="dropdown" name="dropdown">
+                        <option value="americas">Americas</option>
+                        <option value="africa">Africa</option>
+                        <option value="asia">Asia</option>
+                        <option value="europe">Europe</option>
+                        <option value="oceania">Oceania</option>
+                    </select><br>
+                </label>
+
+                <!--User story 13-->
+                <fieldset>
+                    <p>Gender :</p>
+                    <label class="content"><span>Male</span>
+                        <input type="radio"  name="gender" value="male"> 
+                        <span class="formRadio"></span>
+                    </label>
+                    <label class="content">
+                        <span>Female</span>
+                        <input type="radio"  name="gender" value="female"> 
+                        <span class="formRadio"></span>
+                    </label>
+                </fieldset>
+
+
+            </div>
+            <div   class="row col-s-9 col-9">
+                <!--User story 14-->
+                <fieldset>
+                    <p>Which of these devices do you connect to the internet with?(Check all that apply)</p>
+
+                    <label class="content">
+                        <span>Desktop computer</span>
+                        <input type="checkbox" name="devices" value="desktop">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="content">
+                        <span>Laptop computer</span>
+                        <input type="checkbox" name="devices" value="laptop">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="content">
+                        <span>Personal Digital Assistant (PDA)</span>
+                        <input type="checkbox" name="devices" value="pda">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="content">
+                        <span>Computer Tablet</span>
+                        <input type="checkbox" name="devices" value="tablet">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="content">
+                        <span>Enterprise Digital Assistant (EDA)</span>
+                        <input type="checkbox" name="devices" value="eda">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="content">
+                        <span>Smartphone</span>
+                        <input type="checkbox" name="devices" value="smartphone">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="content">
+                        <span>Others</span>
+                        <input type="checkbox" name="devices" value="other">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                
+                <fieldset>
+                    <p>Which device is your most preferable to connect to the internet?</p>
+
+                    <label class="content">
+
+                        <span>Desktop computer</span>
+                        <input type="radio"  name="prefered_device" value="computer">
+                        <span class="formRadio"></span>
+                    </label>
+                    
+                    <label class="content">
+                        <span>Laptop computer</span>
+                        <input type="radio" name="prefered_device" value="laptop">
+                        <span class="formRadio"></span>
+                    </label>
+                    
+                    <label class="content">
+                        <span>Personal Digital Assistant (PDA)</span>
+                        <input type="radio" name="prefered_device" value="pda">
+                        <span class="formRadio"></span>
+                    </label>
+                    <label class="content">
+                        <span>Computer Tablet</span>
+                        <input type="radio" name="prefered_device" value="tablet">
+                        <span class="formRadio"></span>
+                    </label>
+                    <label class="content">
+                        <span>Enterprise Digital Assistant (EDA)</span>
+                        <input type="radio" name="prefered_device" value="eda">
+                        <span class="formRadio"></span>
+                    </label>
+                    <label class="content">
+                        <span>Smartphone</span>
+                        <input type="radio" name="prefered_device" value="smartphone">
+                        <span class="formRadio"></span>
+                    </label>
+                    <label class="content">
+                        <span>Other</span>
+                        <input type="radio" name="prefered_device" value="others">
+                        <span class="formRadio"></span>
+                    </label>
+                </fieldset>
+
+
+            </div>
+            <div   class="row col-s-9 col-9">
+
+                <fieldset>
+                    <p>Where do you most prefer to use the internet?</p>
+
+                    <label class="content">
+                        <span>Home</span>
+
+                        <input type="radio" name="prefered_area" value="home">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Cafe/Cofee shop</span>
+                        <input type="radio" name="prefered_area" value="cafe">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Outside</span>
+                        <input type="radio" name="prefered_area" value="outside">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Bookstore</span>
+                        <input type="radio" name="prefered_area" value="bookstore">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Library</span>
+                        <input type="radio" name="prefered_area" value="library">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Friend's home</span>
+                        <input type="radio" name="prefered_area" value="friend_home">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Work</span>
+                        <input type="radio" name="prefered_area" value="work">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Other</span>
+                        <input type="radio" name="prefered_area" value="other">
+                        <span class="formRadio"></span></label>
+                </fieldset>
+
+                <fieldset>
+                    <p>
+                        Do you use the internet more often for work or for personal reasons or an equal amount of both?
+                    </p>
+                    <label class="content">
+                        <span>Much more often for work</span>
+
+                        <input type="radio"  name="usage" value="work_4">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Slightly more often for work</span>
+                        <input type="radio"  name="usage" value="work_3">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>About an equal amount for both work and personal reasons</span>
+                        <input type="radio"  name="usage" value="work_2">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Slightly more for personal reasons</span>
+                        <input type="radio"  name="usage" value="work_1">
+                        <span class="formRadio"></span></label>
+
+                    <label class="content">
+                        <span>Much more for personal reasons</span>
+                        <input type="radio"  name="usage" value="work_0">
+                        <span class="formRadio"></span></label>
+
+                </fieldset>
+                <fieldset>
+
+                    <p>
+                        What do you most often use the internet for? (Check all that apply)
+                    </p>
+
+                    <label class="content">
+                        <span>Research academic articles or books</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="research_documents">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Purchase products or services</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="purchasing">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Practice using a new language</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="learn_languages">
+                        <span class="checkmark"></span></label>
+
+
+
+                    <label class="content">
+                        <span>Find people you know</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="searching_people">
+                        <span class="checkmark"></span></label>
+
+
+                    <label class="content">
+                        <span>Record videos</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="record_video">
+                        <span class="checkmark"></span></label>
+
+
+                    <label class="content">
+                        <span>Play games</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="gaming">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Take online professional training classes</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="training">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Take online academic classes</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="classes">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Play music</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="music">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Send or receive instant messages</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="messaging">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Get directions</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="get_direction">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Read other people's comments (on blogs, news stories, etc.)</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="read_story">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Pay bills</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="pay_bills">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Start new dating relationships</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="dating">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Keep in touch with current or former coworkers</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="coworkers_in_touch">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Send or receive photos</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="photo">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Send or receive videos</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="photo_sending">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Keep in touch with friends</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="friends_keep_in_touch">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Make or receive phone calls</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="calling">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Find local events</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="events">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Take or post surveys</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="survey">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Start new friendships</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="start_frienship">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Search or apply for jobs</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="job_searching">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Play podcasts</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="podcasting">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Keep up with current events</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="event_news">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Check the weather forecast</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="wheather">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Make travel arrangements</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="traveling">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span> Find recipes</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="recipes">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Play videos (other than video games)</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="cooking">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Use social networking websites</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="social_networking">
+                        <span class="checkmark"></span></label>
+
+                    <label class="content">
+                        <span>Other</span>
+                        <input type="checkbox" class="formCheck" name="regular_usage" value="other">
+                        <span class="checkmark"></span></label>
+
+                </fieldset>
+
+
+            </div>
+            <div   class="row col-s-9 col-9">
+
+                <!--User story 15-->
+                <label>
+                    <p>Comments</p>
+                    <textarea>Additional comments ...</textarea>
+                    <span class="checkmark"></span></label>
+            </div>
+
+            <div   class="row col-s-9 col-9 last">
+
+                <!--User story 16-->
+                <input type="submit" id="submit" class="soumettre">
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
