@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>Suvey Form</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+</head>
 
-  <body>
+<body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="container">
         <div class="row col-s-9 col-9">
@@ -22,23 +23,33 @@
 
         <!--User story 3-->
         <form id="survey-form">
-            <div   class="row col-s-9 col-9">
-                <!--User stories 4, 10, 11-->
-                <label id="name-label"><span>Name :</span> <input type="text" id="name" required
-                        placeholder="Enter yout name please"> </label><br>
+            <div class="row col-s-9 col-9">
 
-                <!--User stories 5 , 6, 10, 11 -->
-                <label id="email-label"><span>Email : </span><input type="email" id="email"
-                        pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" required
-                        placeholder="Enter you Email"> </label><br>
+                <div class="alpha">
+                    <!--User stories 4, 10, 11-->
+                    <label id="name-label"><span>Name :</span> <input type="text" id="name" required
+                            placeholder="Enter yout name please"> </label><br>
+                </div>
+                <div class="alpha">
+                    <!--User stories 5 , 6, 10, 11 -->
+                    <label id="email-label"><span>Email : </span><input type="email" id="email"
+                            pattern="[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,}" required
+                            placeholder="Enter you Email"> </label>
+                </div>
+                <div class="alpha">
+                    <!--User stories 7, 8, 9-->
+                    <label id="number-label"><span>Age :</span> <input type="number" id="number" min="15" max="100"
+                            placeholder="Your age"> </label>
 
-                <!--User stories 7, 8, 9-->
-                <label id="number-label"><span>Age :</span> <input type="number" id="number" min="15" max="100"
-                        placeholder="Enter your age"> </label><br>
+                </div>
+
+
+
+
 
             </div>
 
-            <div   class="row col-s-9 col-9">
+            <div class="row col-s-9 col-9">
                 <!--User story 12-->
                 <label>
                     Please select your continent:
@@ -55,19 +66,19 @@
                 <fieldset>
                     <p>Gender :</p>
                     <label class="content"><span>Male</span>
-                        <input type="radio"  name="gender" value="male"> 
+                        <input type="radio" name="gender" value="male">
                         <span class="formRadio"></span>
                     </label>
                     <label class="content">
                         <span>Female</span>
-                        <input type="radio"  name="gender" value="female"> 
+                        <input type="radio" name="gender" value="female">
                         <span class="formRadio"></span>
                     </label>
                 </fieldset>
 
 
             </div>
-            <div   class="row col-s-9 col-9">
+            <div class="row col-s-9 col-9">
                 <!--User story 14-->
                 <fieldset>
                     <p>Which of these devices do you connect to the internet with?(Check all that apply)</p>
@@ -108,23 +119,23 @@
                         <span class="checkmark"></span>
                     </label>
                 </fieldset>
-                
+
                 <fieldset>
                     <p>Which device is your most preferable to connect to the internet?</p>
 
                     <label class="content">
 
                         <span>Desktop computer</span>
-                        <input type="radio"  name="prefered_device" value="computer">
+                        <input type="radio" name="prefered_device" value="computer">
                         <span class="formRadio"></span>
                     </label>
-                    
+
                     <label class="content">
                         <span>Laptop computer</span>
                         <input type="radio" name="prefered_device" value="laptop">
                         <span class="formRadio"></span>
                     </label>
-                    
+
                     <label class="content">
                         <span>Personal Digital Assistant (PDA)</span>
                         <input type="radio" name="prefered_device" value="pda">
@@ -154,7 +165,7 @@
 
 
             </div>
-            <div   class="row col-s-9 col-9">
+            <div class="row col-s-9 col-9">
 
                 <fieldset>
                     <p>Where do you most prefer to use the internet?</p>
@@ -208,27 +219,27 @@
                     <label class="content">
                         <span>Much more often for work</span>
 
-                        <input type="radio"  name="usage" value="work_4">
+                        <input type="radio" name="usage" value="work_4">
                         <span class="formRadio"></span></label>
 
                     <label class="content">
                         <span>Slightly more often for work</span>
-                        <input type="radio"  name="usage" value="work_3">
+                        <input type="radio" name="usage" value="work_3">
                         <span class="formRadio"></span></label>
 
                     <label class="content">
                         <span>About an equal amount for both work and personal reasons</span>
-                        <input type="radio"  name="usage" value="work_2">
+                        <input type="radio" name="usage" value="work_2">
                         <span class="formRadio"></span></label>
 
                     <label class="content">
                         <span>Slightly more for personal reasons</span>
-                        <input type="radio"  name="usage" value="work_1">
+                        <input type="radio" name="usage" value="work_1">
                         <span class="formRadio"></span></label>
 
                     <label class="content">
                         <span>Much more for personal reasons</span>
-                        <input type="radio"  name="usage" value="work_0">
+                        <input type="radio" name="usage" value="work_0">
                         <span class="formRadio"></span></label>
 
                 </fieldset>
@@ -401,16 +412,17 @@
 
 
             </div>
-            <div   class="row col-s-9 col-9">
+            <div class="row col-s-9 col-9">
 
                 <!--User story 15-->
                 <label>
                     <p>Comments</p>
                     <textarea>Additional comments ...</textarea>
-                    <span class="checkmark"></span></label>
+                    <span class="checkmark"></span>
+                </label>
             </div>
 
-            <div   class="row col-s-9 col-9 last">
+            <div class="row col-s-9 col-9 last">
 
                 <!--User story 16-->
                 <input type="submit" id="submit" class="soumettre">
